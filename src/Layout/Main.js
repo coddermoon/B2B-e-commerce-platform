@@ -1,9 +1,10 @@
 import React from 'react';
+import Customars from '../Pages/Customars/Customars';
 
 const Main = () => {
     return (
-        <div>
-          <h2>this is main component</h2>  
+        <div className='container mx-auto'>
+         <Customars/>
         </div>
     );
 };
