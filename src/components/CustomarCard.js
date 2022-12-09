@@ -11,9 +11,9 @@ const CustomarCard = ({user}) => {
         </div>
         {/* name section */}
         
-        <div className="col-span-8 flex flex-col md:flex-row justify-around items-center">
-            <h2 className='text-2xl font-semibold text-center'>{name}</h2>
-            <h5 className='font-semibold text-gray-800 text-center'>{total_order} orders</h5>
+        <div className="col-span-8 flex flex-col md:flex-row justify-between items-left ml-12">
+            <h2 className='text-2xl font-semibold text-left'>{name}</h2>
+            <h5 className='font-semibold text-gray-800 text-left '>{total_order} orders</h5>
         </div>
         <div>
         
