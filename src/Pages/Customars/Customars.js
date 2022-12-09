@@ -7,15 +7,13 @@ const Customars = () => {
 
     useEffect(() => {
 
-        fetch('./fakedata/users.json')
-        .then(response => response.json())
-        .then(data=>console.log(data))
-        // axios.get('fakedata/users.json')
-        //    .then(response => {
-        //         setUsers(response.data);
-        //     })
+        
+        axios.get('fakedata/users.json')
+           .then(response => {
+                setUsers(response.data);
+            })
     },[])
-    console.log(users)
+  
     return (
         <div className='mt-5 py-8'>
 
@@ -26,7 +24,7 @@ const Customars = () => {
             />)
             }
 
-<CustomarCard/>
+{/* <CustomarCard/> */}
 
 
         </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 
 const CustomarCard = ({user}) => {
-    const {name,imageUrl,orders}= user
+    const {name,imageUrl, total_order}= user
     return (
-        <div className="rounded-md shadow-xl py-5  w-3/2 bg-white text-gray-900 border ">
+        <div className="rounded-md shadow-xl py-5 my-3  w-3/2 bg-white text-gray-900 border ">
 	
         <div className="grid grid-cols-12 justify-center items-center ">
         <div className="img-user col-span-2 ml-3">
@@ -13,7 +13,7 @@ const CustomarCard = ({user}) => {
         
         <div className="col-span-8 flex flex-col md:flex-row justify-around items-center">
             <h2 className='text-2xl font-semibold text-center'>{name}</h2>
-            <h5 className='font-semibold text-gray-800 text-center'>{orders} orders</h5>
+            <h5 className='font-semibold text-gray-800 text-center'>{total_order} orders</h5>
         </div>
         <div>
         
