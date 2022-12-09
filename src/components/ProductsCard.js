@@ -1,12 +1,15 @@
 import React from "react";
 
-const ProductsCard = () => {
+const ProductsCard = ({product}) => {
+
+    const {productName,productTumb}= product
+
   return (
     <div className="rounded-md shadow-xl py-5 my-3   mx-auto bg-white text-gray-900 border ">
       <div className="grid grid-cols-4 justify-center items-center ">
         <div className="img-user col-span-1 ml-3">
           <img
-            src="https://media.istockphoto.com/id/1400292359/photo/ice-cream-cones-bouquet.jpg?b=1&s=170667a&w=0&k=20&c=WWRPlrH9XrlZ74wkUhiK5S6nzm9O0vjRDpSJ-CHAC70="
+            src={productTumb}
             alt=""
             className="object-cover object-center rounded shadow-sm dark:bg-gray-500 dark:border-gray-700"
           />
