@@ -26,7 +26,7 @@ const ProductsCard = ({product}) => {
 
             <div>
               <label
-                for={`Toggle${_id}`}
+                htmlFor={`Toggle${_id}`}
                 className="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-100"
               >
                 <span>Left</span>
